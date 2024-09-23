@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AWS_REGION = 'us-east-2'  // Example: us-east-1
+        AWS_REGION = 'us-east-2'  // Example: us-east-1 (test)
         AWS_ACCOUNT_ID = '854169191699'
         ECR_REPO = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/portfolio"
     }
@@ -23,6 +23,7 @@ pipeline {
                 }
             }
         }
+
 
         stage('Login to AWS ECR') {
             steps {
