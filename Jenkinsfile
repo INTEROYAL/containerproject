@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Pull code from the GitHub repository
-                git branch: 'main', url: 'https://github.com/your-github-username/your-repo-name.git'
+                git branch: 'main', url: 'https://github.com/INTEROYAL/containerproject.git'
             }
         }
 
